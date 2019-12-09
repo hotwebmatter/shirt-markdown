@@ -15,7 +15,28 @@ namespace shirt_markdown
     {
         static void Main(string[] args)
         {
-            WriteLine("Hello World!");
+            // calculate values using compile-time initialization
+            // note that this algorithm seems wrong; retail price is undefined
+            // and sale price should be markdown of retail, not wholesale
+            // but it's just a silly code example from a textbook :)
+
+            string itemName = "Open Collar Running Shirt";
+            double itemWholesalePrice = 41,
+                   markdownPercentage = 0.15,
+                   itemMarkdownAmount = itemWholesalePrice * markdownPercentage,
+                   itemMarkdownPrice = itemWholesalePrice * (1 - markdownPercentage);
+            if (itemMarkdownPrice == (itemWholesalePrice - itemMarkdownAmount))
+            {
+                // generate output
+                WriteLine("{0} {1}", "Item Name:", itemName);
+                WriteLine("{0} {1:C2}", "Wholesale:", itemWholesalePrice);
+                WriteLine("{0} {1:C2}", "Markdown:", itemMarkdownAmount);
+                WriteLine("{0} {1:C2}", "Sale price:", itemMarkdownPrice);
+            }
+            else
+            {
+                WriteLine("Something went wrong with our calculations!");
+            }
         }
     }
 }
