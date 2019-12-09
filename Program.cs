@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace shirt_markdown
 {
@@ -6,7 +7,7 @@ namespace shirt_markdown
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Hello World!");
         }
     }
 }
