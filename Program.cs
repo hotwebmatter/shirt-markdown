@@ -35,7 +35,9 @@ namespace shirt_markdown
             }
             else
             {
+                // unreachable state
                 WriteLine("Something went wrong with our calculations!");
+                WriteLine("https://www.xkcd.com/2200/");
             }
         }
     }
