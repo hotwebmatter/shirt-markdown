@@ -28,10 +28,10 @@ namespace shirt_markdown
             if (itemMarkdownPrice == (itemWholesalePrice - itemMarkdownAmount))
             {
                 // generate output
-                WriteLine("{0} {1}", "Item Name:", itemName);
-                WriteLine("{0} {1:C2}", "Wholesale:", itemWholesalePrice);
-                WriteLine("{0} {1:C2}", "Markdown:", itemMarkdownAmount);
-                WriteLine("{0} {1:C2}", "Sale price:", itemMarkdownPrice);
+                WriteLine("{0, 12} {1}", "Item Name:", itemName);
+                WriteLine("{0, 12} {1:C2}", "Wholesale:", itemWholesalePrice);
+                WriteLine("{0, 12} {1:C2}", "Markdown:", itemMarkdownAmount);
+                WriteLine("{0, 12} {1:C2}", "Sale price:", itemMarkdownPrice);
             }
             else
             {
