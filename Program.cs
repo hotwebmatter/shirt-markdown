@@ -35,7 +35,7 @@ namespace shirt_markdown
             }
             else
             {
-                // unreachable state
+                // unreachable state (if algorithm is correct)
                 WriteLine("Something went wrong with our calculations!");
                 WriteLine("https://www.xkcd.com/2200/");
             }
